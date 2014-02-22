@@ -7,6 +7,10 @@ objs = srcs.map{|s| s.gsub(".cpp", ".o")}
 
 task :default => bin
 
+task :run => bin do |t|
+	sh "./#{bin}"
+end
+
 task bin => objs do |t|
 	sh "g++ -o #{t.name} #{t.prerequisites.join(' ')} #{ldflags}"
 end
