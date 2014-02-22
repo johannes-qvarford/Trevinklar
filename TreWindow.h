@@ -1,5 +1,5 @@
-#ifndef TRE_TRE_WINDOW
-#define TRE_TRE_WINDOW
+#ifndef TRE_TRE_WINDOW_H
+#define TRE_TRE_WINDOW_H
 
 #include <SFML/Graphics/RenderWindow.hpp>
 
